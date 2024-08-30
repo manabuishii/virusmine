@@ -21,6 +21,15 @@
       <property name="fasta.includes" value="VR*.fasta"/>
       <property name="src.data.dir" location="DATA_DIR/virus/genome/fasta"/>
     </source>
+    <source name="my-data-source" type="delimited">
+      <property name="delimited.dataSourceName" value="TSV Source Name"/>
+      <property name="delimited.dataSetTitle" value="TSV Data Set"/>
+      <property name="delimited.licence" value="http//usemydatalicence.com"/>
+      <property name="delimited.hasHeader" value="true"/>
+      <property name="delimited.columns" value="Gene.primaryIdentifier, Organism.taxonId, null,Protein.primaryIdentifier,Protein.primaryAccession"/>
+      <property name="delimited.includes" value="test.tsv"/>
+      <property name="src.data.dir" location="DATA_DIR/virus/tsv"/>
+    </source>
   </sources>
 
   <post-processing>
